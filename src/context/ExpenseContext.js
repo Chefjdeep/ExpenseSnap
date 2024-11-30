@@ -1,13 +1,13 @@
 import React, { createContext, useContext, useReducer } from 'react';
 
-// Initial state
+
 const initialState = {
   budget: 0,
   expenses: [],
   balance: 5000,
 };
 
-// Reducer function to handle different actions
+
 const expenseReducer = (state, action) => {
   switch (action.type) {
     case 'SET_BUDGET':
@@ -27,10 +27,10 @@ const expenseReducer = (state, action) => {
   }
 };
 
-// Create context
+
 const ExpenseContext = createContext();
 
-// ExpenseProvider to wrap your app and provide global state
+
 export const ExpenseProvider = ({ children }) => {
   const [state, dispatch] = useReducer(expenseReducer, initialState);
 
