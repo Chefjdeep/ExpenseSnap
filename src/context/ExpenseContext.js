@@ -41,5 +41,4 @@ export const ExpenseProvider = ({ children }) => {
   );
 };
 
-// Custom hook to access ExpenseContext
 export const useExpenseContext = () => useContext(ExpenseContext);
