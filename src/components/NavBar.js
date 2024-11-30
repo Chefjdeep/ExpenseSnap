@@ -13,7 +13,7 @@ const NavBar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <p className="navbar-brand">Expense Tracker Image</p>
+      <p className="navbar-brand">ExpenseSnap</p>
       <button
         className="navbar-toggler"
         type="button"
