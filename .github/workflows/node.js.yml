@@ -1,0 +1,45 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment when code is pushed to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger deployment for pull requests targeting main branch
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # Check out the repository
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Set up Node.js with the desired version (you can customize the version as needed)
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18.x'  # You can set the version you prefer (e.g., 18.x, 20.x, etc.)
+        cache: 'npm'
+
+    # Install dependencies using npm ci
+    - name: Install dependencies
+      run: npm ci
+
+    # Build the React app
+    - name: Build React app
+      run: npm run build
+
+    # Deploy to GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        # The folder that contains the build output (usually `build/` in a Create React App)
+        folder: build
+        # The GitHub repository URL (you can use the `GITHUB_TOKEN` for authentication)
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        # The target branch for deployment (usually `gh-pages` for GitHub Pages)
+        target_branch: gh-pages
