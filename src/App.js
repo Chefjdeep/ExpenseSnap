@@ -15,7 +15,7 @@ function App() {
 				<div>
 					<NavBar />
 					<Routes>
-						<Route path="/" element={<Home />} />
+						<Route path="/home" element={<Home />} />
 						<Route path="/expenses" element={<Expenses />} />
 					</Routes>
 				</div>
@@ -37,8 +37,8 @@ const Home = () => {
 const Expenses = () => {
 	return (
 		<div>
-      <Balance />
-      <h2 align='center'>History</h2>
+			<Balance />
+			<h2 align="center">History</h2>
 			<ExpenseList />
 		</div>
 	);

@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useReducer } from 'react';
-
+import React, { createContext, useContext, useReducer, useEffect } from 'react';
+import { saveToLocalStorage, loadFromLocalStorage } from '../components/LocalStorage';
 
 const initialState = {
   budget: 0,
@@ -7,6 +7,14 @@ const initialState = {
   balance: 5000,
 };
 
+// Load initial state from localStorage
+const loadInitialState = () => {
+  const loadedState = loadFromLocalStorage();
+  if (loadedState) {
+    return loadedState;
+  }
+  return initialState;
+};
 
 const expenseReducer = (state, action) => {
   switch (action.type) {
@@ -27,12 +35,15 @@ const expenseReducer = (state, action) => {
   }
 };
 
-
 const ExpenseContext = createContext();
 
-
 export const ExpenseProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(expenseReducer, initialState);
+  const [state, dispatch] = useReducer(expenseReducer, loadInitialState());
+
+  // Save state to localStorage whenever the state changes
+  useEffect(() => {
+    saveToLocalStorage(state);
+  }, [state]);
 
   return (
     <ExpenseContext.Provider value={{ state, dispatch }}>
