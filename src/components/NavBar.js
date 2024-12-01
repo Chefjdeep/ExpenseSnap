@@ -27,7 +27,7 @@ const NavBar = () => {
 			</button>
 			<ul className="navbar-nav mr-auto">
 				<li className="nav-item">
-					<NavLink className="nav-link" to="/home" activeClassName="active">
+					<NavLink className="nav-link" to="/ExpenseSnap" activeClassName="active">
 						Home
 					</NavLink>
 				</li>
