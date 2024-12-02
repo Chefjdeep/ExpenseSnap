@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ExpenseSnap/static/css/main.e70f3b20.css",
-    "main.js": "/ExpenseSnap/static/js/main.3327c14a.js",
+    "main.css": "/ExpenseSnap/static/css/main.eaf44f9e.css",
+    "main.js": "/ExpenseSnap/static/js/main.ffa0bc1f.js",
     "static/js/239.a5fb85aa.chunk.js": "/ExpenseSnap/static/js/239.a5fb85aa.chunk.js",
     "static/js/213.e175c82d.chunk.js": "/ExpenseSnap/static/js/213.e175c82d.chunk.js",
     "static/js/732.161473f3.chunk.js": "/ExpenseSnap/static/js/732.161473f3.chunk.js",
     "static/js/453.08791700.chunk.js": "/ExpenseSnap/static/js/453.08791700.chunk.js",
     "index.html": "/ExpenseSnap/index.html",
-    "main.e70f3b20.css.map": "/ExpenseSnap/static/css/main.e70f3b20.css.map",
-    "main.3327c14a.js.map": "/ExpenseSnap/static/js/main.3327c14a.js.map",
+    "main.eaf44f9e.css.map": "/ExpenseSnap/static/css/main.eaf44f9e.css.map",
+    "main.ffa0bc1f.js.map": "/ExpenseSnap/static/js/main.ffa0bc1f.js.map",
     "239.a5fb85aa.chunk.js.map": "/ExpenseSnap/static/js/239.a5fb85aa.chunk.js.map",
     "213.e175c82d.chunk.js.map": "/ExpenseSnap/static/js/213.e175c82d.chunk.js.map",
     "732.161473f3.chunk.js.map": "/ExpenseSnap/static/js/732.161473f3.chunk.js.map",
     "453.08791700.chunk.js.map": "/ExpenseSnap/static/js/453.08791700.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e70f3b20.css",
-    "static/js/main.3327c14a.js"
+    "static/css/main.eaf44f9e.css",
+    "static/js/main.ffa0bc1f.js"
   ]
 }
