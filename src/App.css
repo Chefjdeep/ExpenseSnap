@@ -3,60 +3,62 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Arial", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 /* Body Styles */
 body {
-	background-color: #f4f7fa;
-	color: #333;
+	background: linear-gradient(to right, #e3fdfd, #ffe6fa);
+	color: #222;
+	font-size: 16px;
+	line-height: 1.6;
 }
 
 /* Page Layout */
 h1 {
 	text-align: center;
 	margin-top: 30px;
-	color: #007bff;
+	color: #ff4b5c;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 .container {
 	padding: 20px;
-	margin-top: 30px;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 30px auto;
 }
 
 /* Navbar Custom Styles */
 .navbar {
-	background-color: #007bff !important; /* Blue background for navbar */
-	padding: 15px;
+	background: linear-gradient(90deg, #ff7eb3, #ff758c);
+	padding: 15px 20px;
+	border-radius: 8px;
 }
 
 .navbar .navbar-brand {
-	color: white !important; /* Ensure the brand text is white */
+	color: white;
 	font-size: 24px;
 	font-weight: bold;
 }
 
 .navbar .navbar-nav .nav-link {
-	color: white !important; /* Ensure the links are white */
+	color: white;
 	margin-right: 20px;
+	transition: color 0.3s;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-	color: #ffc107 !important; /* Yellow hover effect */
+	color: #fcd34d;
 }
 
-.navbar .navbar-nav .nav-link.active {
-	color: #28a745 !important; /* Green active link */
-}
-
-.navbar-toggler {
-	border-color: white !important; /* White border for toggle button */
+.navbar .navbar-toggler {
+	border-color: white;
 }
 
 .navbar-toggler-icon {
-	background-color: white !important; /* White toggle icon */
+	background-color: white;
 }
 
 .navbar-collapse {
@@ -64,94 +66,82 @@ h1 {
 }
 
 .navbar .form-inline .form-control {
-	border-radius: 20px; /* Rounded corners for the search input */
-	padding: 5px 20px;
-	padding-left: 20px; /* Padding for the search input */
-	border: 1px solid black; /* Border color matching the navbar */
+	border-radius: 20px;
+	padding: 10px 20px;
 	margin-left: 20px;
+	border: 1px solid #fff;
 }
 
 .navbar .form-inline .btn {
-	background-color: #28a745; /* Green button */
-	color: white;
-	border-radius: 20px; /* Rounded corners for the button */
+	background-color: #ffc107;
+	color: #222;
+	border-radius: 20px;
 }
 
 .navbar .form-inline .btn:hover {
-	background-color: #218838; /* Darker green on hover */
-}
-
-/* Responsive Navbar (collapsed) */
-@media (max-width: 767px) {
-	.navbar-collapse {
-		background-color: #007bff;
-		border-radius: 8px;
-		padding: 15px;
-	}
-
-	.navbar-toggler-icon {
-		background-color: white;
-	}
+	background-color: #ffb703;
 }
 
 /* Balance Section */
 .balance {
 	text-align: center;
-	background-color: #e2f1ff;
+	background-color: rgba(255, 255, 255, 0.8);
 	padding: 20px;
 	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 	margin-bottom: 30px;
 }
 
 .balance h2 {
-	font-size: 24px;
-	color: #007bff;
+	font-size: 1.8rem;
+	color: #ff4b5c;
 }
 
 /* Budget Section */
 .budget-section {
-	background-color: #ffffff;
+	background: white;
 	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	margin-bottom: 30px;
 }
 
 .budget-section label {
 	font-size: 18px;
-	margin-right: 10px;
+	margin-bottom: 10px;
+	display: block;
 }
 
 .budget-section input {
 	width: 100%;
 	padding: 12px;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	font-size: 16px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
 }
 
 .budget-section button {
-	background-color: #28a745;
+	background: linear-gradient(90deg, #ff7eb3, #ff758c);
 	color: white;
 	border: none;
 	padding: 12px 25px;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: bold;
 	border-radius: 8px;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
+	transition: background 0.3s;
 }
 
 .budget-section button:hover {
-	background-color: #218838;
+	background: linear-gradient(90deg, #ff758c, #ff4b5c);
 }
 
 /* Expense Form */
 .expense-form {
-	background-color: #ffffff;
+	background: rgba(255, 255, 255, 0.9);
 	padding: 25px 30px;
 	border-radius: 12px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 	margin: 30px auto;
 	width: 80%;
 	max-width: 500px;
@@ -159,7 +149,7 @@ h1 {
 
 .expense-form label {
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: bold;
 	color: #333;
 	margin-bottom: 10px;
 	display: block;
@@ -173,77 +163,106 @@ h1 {
 	margin-bottom: 20px;
 	border-radius: 8px;
 	border: 1px solid #ddd;
-	font-size: 16px;
 }
 
-.expense-form input[type="text"]:focus,
-.expense-form input[type="number"]:focus {
-	border-color: #007bff;
+.expense-form input:focus {
+	border-color: #ff4b5c;
 	outline: none;
+	box-shadow: 0 0 5px rgba(255, 75, 92, 0.5);
 }
 
 .expense-form button {
-	background-color: #28a745;
+	background: linear-gradient(90deg, #ff7eb3, #ff758c);
 	color: white;
 	border: none;
 	padding: 12px 25px;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: bold;
 	border-radius: 8px;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
+	transition: background 0.3s;
 }
 
 .expense-form button:hover {
-	background-color: #218838;
+	background: linear-gradient(90deg, #ff758c, #ff4b5c);
 }
-
-.expense-form .helper-text {
-	color: #888;
-	font-size: 14px;
-	margin-top: -10px;
-	margin-bottom: 15px;
-}
-
 /* Expense List */
 .expense-list {
 	list-style-type: none;
 	padding: 0;
+	margin: 20px 0;
 }
 
 .expense-list li {
-	background-color: #fff;
-	border: 1px solid #ddd;
-	border-radius: 8px;
-	padding: 15px;
-	margin: 10px 0;
+	background: #f9f9f9; /* Softer background for better contrast */
+	border: 1px solid #e0e0e0; /* Light border for subtle separation */
+	border-radius: 12px; /* Slightly more rounded corners */
+	padding: 20px; /* Increased padding for better spacing */
+	margin: 15px 0; /* More margin for cleaner spacing between items */
 	display: flex;
-	align-items: center;
+	align-items: center; /* Center items vertically */
+	justify-content: space-between; /* Distribute space between items */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for emphasis */
+	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+}
+
+.expense-list li:hover {
+	transform: translateY(-5px); /* Slight lift on hover */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .expense-list li img {
-	border-radius: 50%;
-	width: 60px;
-	height: 60px;
+	width: 100px; /* Increased size for better visibility */
+	height: 100px; /* Matching height for perfect circle */
 	object-fit: cover;
-	margin-right: 20px;
+	align-items: right;
+	margin-right: 20px; /* Space between image and other elements */
+	border: 2px solid #007bff; /* Add a colored border for emphasis */
 }
 
 .expense-list li p {
 	margin: 5px 0;
-}
-.navbar button {
-	background-color: #28a745;
-	color: white;
-	border: none;
-	padding: 12px 25px;
-	font-size: 18px;
-	font-weight: 600;
-	border-radius: 8px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
+	font-size: 1.1rem; /* Slightly larger font for better readability */
+	color: #333; /* Darker text for contrast */
+	flex: 1; /* Allow the text to take available space */
 }
 
-.navbar button:hover {
-	background-color: #218838;
+/* Description */
+.expense-list li .description {
+	font-weight: bold;
+	color: #28a745; /* Green color to signify a positive amount */
+	font-size: 1.2rem; /* Slightly larger font for importance */
+	flex: 1; /* Allow description to take remaining space */
+}
+
+/* No image text */
+.expense-list li .noimg {
+	font-weight: bold;
+	text-align: right;
+	margin-right: 30px;
+	color: #28a745; /* Green color to signify a positive amount */
+	font-size: 1.2rem; /* Slightly larger font for importance */
+}
+
+/* Amount */
+.expense-list li .amount {
+	font-weight: bold;
+	color: #28a745; /* Green color to signify a positive amount */
+	font-size: 1.2rem; /* Slightly larger font for importance */
+	text-align: center;
+	display: inline-block;
+	width: 100px; /* Fixed width to ensure consistency */
+	padding: 5px; /* Optional: Adds padding inside the amount box */
+	margin: 0 auto; /* Centers the amount horizontally */
+	flex-shrink: 0; /* Prevent it from shrinking */
+	white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Responsive Navbar */
+@media (max-width: 767px) {
+	.navbar-collapse {
+		background: linear-gradient(90deg, #ff7eb3, #ff758c);
+		border-radius: 8px;
+		padding: 15px;
+	}
 }

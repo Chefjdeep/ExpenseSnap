@@ -25,6 +25,7 @@ export const loadFromLocalStorage = () => {
 export const clearLocalStorage = () => {
   try {
     localStorage.clear(LOCAL_STORAGE_KEY);
+    console.log("Cleared data")
   } catch (error) {
     console.error('Error clearing localStorage:', error);
   }

@@ -8,6 +8,7 @@ import ExpenseList from "./components/ExpenseList";
 import Balance from "./components/Balance"; // Make sure this import is used
 import "./App.css";
 
+
 function App() {
 	return (
 		<ExpenseProvider>

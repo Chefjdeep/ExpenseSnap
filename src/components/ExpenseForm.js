@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useExpenseContext } from "../context/ExpenseContext";
+import addExpenseToSheet from "./GoogleSheet";
+
 
 function ExpenseForm() {
   const { dispatch } = useExpenseContext(); // Using dispatch to update the global state
@@ -41,11 +43,15 @@ function ExpenseForm() {
       payload: expense,
     });
 
+    addExpenseToSheet(expense);
+
     // Clear form after submission
     setDescription("");
     setAmount("");
     setImage(null);
   };
+
+
 
   return (
     <form onSubmit={handleSubmit} className="expense-form">
